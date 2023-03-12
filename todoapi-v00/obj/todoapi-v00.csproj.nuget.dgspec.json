@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\DIEGO\\SVILUPPO\\olprofesur\\todoapi-v00\\todoapi-v00.csproj": {}
+    "C:\\DIEGO\\SVILUPPO\\olprofesur\\github\\csharp-ws-api\\todoapi-v00\\todoapi-v00.csproj": {}
   },
   "projects": {
-    "C:\\DIEGO\\SVILUPPO\\olprofesur\\todoapi-v00\\todoapi-v00.csproj": {
+    "C:\\DIEGO\\SVILUPPO\\olprofesur\\github\\csharp-ws-api\\todoapi-v00\\todoapi-v00.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\DIEGO\\SVILUPPO\\olprofesur\\todoapi-v00\\todoapi-v00.csproj",
+        "projectUniqueName": "C:\\DIEGO\\SVILUPPO\\olprofesur\\github\\csharp-ws-api\\todoapi-v00\\todoapi-v00.csproj",
         "projectName": "todoapi-v00",
-        "projectPath": "C:\\DIEGO\\SVILUPPO\\olprofesur\\todoapi-v00\\todoapi-v00.csproj",
+        "projectPath": "C:\\DIEGO\\SVILUPPO\\olprofesur\\github\\csharp-ws-api\\todoapi-v00\\todoapi-v00.csproj",
         "packagesPath": "C:\\Users\\diego\\.nuget\\packages\\",
-        "outputPath": "C:\\DIEGO\\SVILUPPO\\olprofesur\\todoapi-v00\\obj\\",
+        "outputPath": "C:\\DIEGO\\SVILUPPO\\olprofesur\\github\\csharp-ws-api\\todoapi-v00\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\diego\\AppData\\Roaming\\NuGet\\NuGet.Config",

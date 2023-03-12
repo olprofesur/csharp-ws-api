@@ -22,7 +22,7 @@ builder.Services.AddSwaggerGen();
 IConfiguration configuration = new ConfigurationBuilder()
    .AddJsonFile("appsettings.json", true, true)
    .Build();
-MySqlConnection conn = new MySqlConnection("server=localhost;user id=todoapp;password=todoapp;database=todoapp");
+//MySqlConnection conn = new MySqlConnection("server=localhost;user id=todoapp;password=todoapp;database=todoapp");
 string? s = configuration.GetConnectionString("TodoDB");
 builder.Services.AddDbContext<TodoContext>(options => options.UseMySql(s, ServerVersion.AutoDetect(s)));
 

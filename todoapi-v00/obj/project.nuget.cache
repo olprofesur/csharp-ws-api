@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "SUzLC2KAePTk/2bcEGwXO3TyB9XFAVZVU3a2rFs6JfESR5TDgZ7VOt+Qin9t6CKMH+p9MwC+OFwIcgGl5+DIcQ==",
+  "dgSpecHash": "xwfKoe0xTep67npGivROtpHiAG9tkpNgRRlZ1CmdIyHaVyNk3x5hd/meni0vLBXQd4EJPoZxGOwtBeME57dNQQ==",
   "success": true,
-  "projectFilePath": "C:\\DIEGO\\SVILUPPO\\olprofesur\\todoapi-v00\\todoapi-v00.csproj",
+  "projectFilePath": "C:\\DIEGO\\SVILUPPO\\olprofesur\\github\\csharp-ws-api\\todoapi-v00\\todoapi-v00.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\diego\\.nuget\\packages\\google.protobuf\\3.21.9\\google.protobuf.3.21.9.nupkg.sha512",
     "C:\\Users\\diego\\.nuget\\packages\\k4os.compression.lz4\\1.2.6\\k4os.compression.lz4.1.2.6.nupkg.sha512",
