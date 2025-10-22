@@ -1,3 +1,4 @@
+﻿using Microsoft.AspNetCore.OpenApi;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Options;
@@ -16,6 +17,7 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+builder.Services.AddOpenApi();
 //builder.Services.AddDbContext<TodoContext>(opt => opt.UseMySql(builder.Configuration.GetConnectionString("TodoDB")));
 
 
@@ -43,4 +45,5 @@ app.UseAuthorization();
 app.MapControllers();
 
 app.Run();
+
 
