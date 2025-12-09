@@ -2,14 +2,19 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Options;
-using MySql.Data.MySqlClient;
 using System.Configuration;
 using System.Diagnostics;
 using System.Xml.Linq;
 using TodoApi.Models;
 using static Microsoft.EntityFrameworkCore.DbLoggerCategory.Database;
 
+
 var builder = WebApplication.CreateBuilder(args);
+
+var cs = builder.Configuration.GetConnectionString("TodoDB")
+         ?? "server=localhost;user id=todoapp;password=todoapp;database=todoapp";
+builder.Services.AddDbContext<TodoContext>(options =>
+    options.UseMySql(cs, ServerVersion.AutoDetect(cs)));
 
 // Add services to the container.
 
@@ -21,12 +26,6 @@ builder.Services.AddOpenApi();
 //builder.Services.AddDbContext<TodoContext>(opt => opt.UseMySql(builder.Configuration.GetConnectionString("TodoDB")));
 
 
-IConfiguration configuration = new ConfigurationBuilder()
-   .AddJsonFile("appsettings.json", true, true)
-   .Build();
-//MySqlConnection conn = new MySqlConnection("server=localhost;user id=todoapp;password=todoapp;database=todoapp");
-string? s = configuration.GetConnectionString("TodoDB");
-builder.Services.AddDbContext<TodoContext>(options => options.UseMySql(s, ServerVersion.AutoDetect(s)));
 
 
 var app = builder.Build();
@@ -34,11 +33,15 @@ var app = builder.Build();
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
-    app.UseSwagger();
-    app.UseSwaggerUI();
+    app.MapOpenApi();   // /openapi/v1.json
+    app.UseSwagger();   // /swagger/v1/swagger.json
+    app.UseSwaggerUI(); // /swagger
 }
 
-app.UseHttpsRedirection();
+if (!app.Environment.IsDevelopment())
+{
+    app.UseHttpsRedirection();
+}
 
 app.UseAuthorization();
 

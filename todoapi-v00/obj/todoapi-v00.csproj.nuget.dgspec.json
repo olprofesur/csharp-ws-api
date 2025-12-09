@@ -1,31 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\DIEGO\\GoogleDrive-OlProfesur\\sviluppo\\csharp-ws-api\\todoapi-v00\\todoapi-v00.csproj": {}
+    "/workspaces/dotnet-codespaces/csharp-ws-api/todoapi-v00/todoapi-v00.csproj": {}
   },
   "projects": {
-    "C:\\DIEGO\\GoogleDrive-OlProfesur\\sviluppo\\csharp-ws-api\\todoapi-v00\\todoapi-v00.csproj": {
+    "/workspaces/dotnet-codespaces/csharp-ws-api/todoapi-v00/todoapi-v00.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\DIEGO\\GoogleDrive-OlProfesur\\sviluppo\\csharp-ws-api\\todoapi-v00\\todoapi-v00.csproj",
+        "projectUniqueName": "/workspaces/dotnet-codespaces/csharp-ws-api/todoapi-v00/todoapi-v00.csproj",
         "projectName": "todoapi-v00",
-        "projectPath": "C:\\DIEGO\\GoogleDrive-OlProfesur\\sviluppo\\csharp-ws-api\\todoapi-v00\\todoapi-v00.csproj",
-        "packagesPath": "C:\\Users\\diego\\.nuget\\packages\\",
-        "outputPath": "C:\\DIEGO\\GoogleDrive-OlProfesur\\sviluppo\\csharp-ws-api\\todoapi-v00\\obj\\",
+        "projectPath": "/workspaces/dotnet-codespaces/csharp-ws-api/todoapi-v00/todoapi-v00.csproj",
+        "packagesPath": "/root/.nuget/packages/",
+        "outputPath": "/workspaces/dotnet-codespaces/csharp-ws-api/todoapi-v00/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\diego\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/root/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -54,13 +48,15 @@
               "target": "Package",
               "version": "[9.0.8, )"
             },
-            "MySql.Data": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
-              "version": "[8.0.32, )"
+              "version": "[9.0.0, )"
             },
             "Pomelo.EntityFrameworkCore.MySql": {
               "target": "Package",
-              "version": "[7.0.0, )"
+              "version": "[9.0.0, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
@@ -86,7 +82,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/9.0.308/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
