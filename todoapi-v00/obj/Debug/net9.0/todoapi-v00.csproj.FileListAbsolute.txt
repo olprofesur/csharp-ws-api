@@ -124,3 +124,4 @@
 /workspaces/dotnet-codespaces/csharp-ws-api/todoapi-v00/obj/Debug/net9.0/todoapi-v00.pdb
 /workspaces/dotnet-codespaces/csharp-ws-api/todoapi-v00/obj/Debug/net9.0/todoapi-v00.genruntimeconfig.cache
 /workspaces/dotnet-codespaces/csharp-ws-api/todoapi-v00/obj/Debug/net9.0/ref/todoapi-v00.dll
+/workspaces/dotnet-codespaces/csharp-ws-api/todoapi-v00/obj/Debug/net9.0/swae.build.ex.cache
