@@ -23,9 +23,6 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddOpenApi();
-//builder.Services.AddDbContext<TodoContext>(opt => opt.UseMySql(builder.Configuration.GetConnectionString("TodoDB")));
-
-
 
 
 var app = builder.Build();
@@ -35,7 +32,10 @@ if (app.Environment.IsDevelopment())
 {
     app.MapOpenApi();   // /openapi/v1.json
     app.UseSwagger();   // /swagger/v1/swagger.json
-    app.UseSwaggerUI(); // /swagger
+    app.UseSwaggerUI(c => 
+      {
+             c.RoutePrefix = "swagger";
+      }); // /swagger
 }
 
 if (!app.Environment.IsDevelopment())
@@ -48,5 +48,6 @@ app.UseAuthorization();
 app.MapControllers();
 
 app.Run();
+
 
 
